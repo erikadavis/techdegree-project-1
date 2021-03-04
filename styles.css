@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: rgb(198, 230, 238);
 }
 /* Link Styles */
 
@@ -57,36 +57,42 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url("images/dogbeach.JPG") no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  color: white;
 }
+
+
 header {
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 2px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
 }
+
 .tag {
-  background-color: #efefef;
+  background-color: #efefef44;
   color: black;
   padding: 10px;
   border-radius: 5px;
+  border: 3px solid white;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: #efefefc7;
+  color: black;
 }
 .card {
   margin: 30px;
@@ -100,6 +106,25 @@ header .profile-image:hover {
 }
 .card:hover {
   border-color: #ff99ff;
+}
+
+.expcard {
+  margin: 80px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.expcard:hover {
+  border-color:#ff99ff;
+}
+.emoji {
+  width: 10%;
+  height: 10%;
 }
 
 ul.skills {
@@ -148,7 +173,7 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
+  opacity: .6;
   transition: all .5s;
 }
 a.twitter {
@@ -159,6 +184,9 @@ a.linkedin {
 }
 a.github {
   background-image: url(images/github.svg);
+}
+a.email {
+  background-image: url(images/email.JPG);
 }
 a.social:hover {
   opacity: 1;
